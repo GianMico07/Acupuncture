@@ -3,6 +3,7 @@ $colors: (
     "gray" : $clr-gray,
     "black" : $clr-black,
     "white" : $clr-white,
+    "light" : $clr-light,
 );
 
 @each $key, $val in $colors{
