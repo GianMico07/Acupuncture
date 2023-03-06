@@ -1,0 +1,83 @@
+.border-bottom-primary {
+    border-bottom: 20px solid $clr-primary;
+}
+
+.banner{
+    background-image: url("/img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    // padding: 10rem 0;
+    height: 100vh;
+    text-align: center;
+    color: $clr-white;
+    background-color: gray;
+    background-blend-mode: multiply;
+
+    h1{
+        font-size: clamp(2.75rem, 3vw, 3.75rem);
+    }
+
+    h5{
+        font-size: clamp(1rem, 2vw, 1.37rem);
+        font-weight: 400;
+    }
+
+    .line-break{
+        margin: 3rem 0;
+
+        hr{
+            width: 20rem;
+            border: 1px solid $clr-white;
+        }
+    }
+
+    h2{
+        font-size: 34px;
+    }
+
+    // a{
+    //     color: $clr-white;
+    //     padding: 1rem 2rem;
+    //     border-radius: 30px;
+    //     font-weight: 600;
+    // }
+}
+
+.offers{
+    &__wrapper{
+        color: $clr-gray;
+        text-align: center;
+
+        h2{
+            font-size: 34px;
+        }
+
+        // .desc{
+        //     padding: 0 9rem;
+        // }
+    }
+
+    padding: 4rem 0;
+}
+
+.offers-card{
+    &__container{
+        @include grid(3,2rem);
+        justify-items: center;
+        @include mediaQuery(){
+            @include grid(1,2rem);
+        }
+        
+    } 
+}
+
+.offer-card{
+    text-align: center;
+    // width: 300px;
+
+    h3{
+        color: $clr-primary;
+        margin: .5rem 0;
+    }
+}
+
